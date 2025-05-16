@@ -1,0 +1,3890 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://spider.sigappfr.org/HSSNdoc/hssn.ttl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://spider.sigappfr.org/HSSNdoc/hssn.ttl">
+    <Prefix name="" IRI="http://spider.sigappfr.org/HSSNdoc/hssn.ttl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="ssn" IRI="http://www.w3.org/ns/ssn/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sosa" IRI="http://www.w3.org/ns/sosa/"/>
+    <Prefix name="mob-ssn" IRI="http://spider.sigappfr.org/Research_Projects/Mob-SSN#"/>
+    <Import>http://www.w3.org/ns/ssn/</Import>
+    <Import>http://www.w3.org/ns/ssn/systems/</Import>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AnnotationDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Audio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/BoundingBoxDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/CameraMotionDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ColorLayoutDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ColorStructureDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ContourShapeDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/DominatColorDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/EdgeHistogramDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/FaceRecognitionDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/FundamentalFrequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralCentroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralDeviation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralSpread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralVariation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LogAttackTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaConcerned"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaDurationDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaTimePointDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionActivityDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ParametricMotionDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/PointDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/PowerDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ScalableColorDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpatialDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectralCentroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumBasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumCentroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumEnvelop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumFlatness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumProjection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumSpread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TemporalCentroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TemporalDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TextAnnotationDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TrajectoryDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/WarpingParameters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Waveform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalAngle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalAngle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Capability"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Input"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Metadata"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:MultimediaValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:NetworkInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Output"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:PowerSupply"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Processor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Range"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:ScalarValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:SensingLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:SensingRange"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:ServiceInteractionInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Software"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:StaticSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Textual"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:UserInteractionInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mob-ssn:Variables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2006/time#TRS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/above"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/below"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/closeTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/covers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/crosses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/disjoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/distanceRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/equals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/farFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/hasMultimediaDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/hasMultimediaSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/leftOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/locationRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/opposite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/overlaps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/rightOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/touches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#atSensingTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#hasSubMap"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#requestedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:atCoverageTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centeredAround"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCoveredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCovers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyLocates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimitedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:embeddedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasComUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasDeployUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasEmbeddedSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasHardware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasInterfaces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasLocationTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasMetadata"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastCoverageArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPowerUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPreviouslyLocated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasProcessingUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasSoftware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasStorageUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasVariables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isCurrentlyLocatedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaHaving"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaOfA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSensedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSenses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:previouslyCoveredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:producedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:providedThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:provides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:relatedToDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarHaving"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarOfA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:sensedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:senses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mob-ssn:unitDeployedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDateTimeDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasEnd"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inDateTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inTemporalPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inTimePosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalAfter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalBefore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalContains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDisjoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDuring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMetBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlappedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlaps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStartedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStarts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#osDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTimeStamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDgYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDgYearMonth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/time#xsdDateTime"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        <Class abbreviatedIRI="mob-ssn:SensingLocation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalAngle"/>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalAngle"/>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="mob-ssn:Range"/>
+        <Class abbreviatedIRI="mob-ssn:SensingRange"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.w3.org/2006/time#Instant"/>
+            <Class IRI="http://www.w3.org/2006/time#Interval"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AnnotationDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Audio"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaConcerned"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioSegment"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/BoundingBoxDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpatialDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/CameraMotionDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ColorLayoutDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ColorStructureDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ContourShapeDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/DominatColorDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/EdgeHistogramDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/FaceRecognitionDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/FundamentalFrequency"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralCentroid"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralDeviation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralSpread"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/HarmonicSpectralVariation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Image"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaConcerned"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/locationRelation"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:currentlyLocates"/>
+            <Class abbreviatedIRI="sosa:Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasPreviouslyLocated"/>
+            <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:composes"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty abbreviatedIRI="mob-ssn:includedIn"/>
+            <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasLocationTime"/>
+            <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#hasSubMap"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:composedOf"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:describes"/>
+            <Class abbreviatedIRI="mob-ssn:Infrastructure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LogAttackTime"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaConcerned"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaDurationDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TemporalDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaTimePointDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TemporalDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionActivityDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaData"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaSegment"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ParametricMotionDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/PointDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpatialDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/PowerDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/ScalableColorDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpatialDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectralCentroid"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumBasis"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumCentroid"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumEnvelop"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumFlatness"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumProjection"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/SpectrumSpread"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TemporalCentroid"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TemporalDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TextAnnotationDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AnnotationDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/TrajectoryDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Video"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MediaConcerned"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/VisualSegment"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/WarpingParameters"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MotionDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Waveform"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/AudioDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalAngle"/>
+        <Class IRI="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines"/>
+            <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalAngle"/>
+        <Class IRI="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines"/>
+            <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:previouslyCoveredBy"/>
+            <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCoveredBy"/>
+            <Class abbreviatedIRI="sosa:Sensor"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:includes"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy"/>
+            <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy"/>
+            <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:atCoverageTime"/>
+            <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:centeredAround"/>
+            <Class abbreviatedIRI="mob-ssn:SensingLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:delimitedBy"/>
+            <Class abbreviatedIRI="mob-ssn:SensingRange"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+        <Class abbreviatedIRI="sosa:Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasHardware"/>
+            <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasSoftware"/>
+            <Class abbreviatedIRI="mob-ssn:Software"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:provides"/>
+            <Class abbreviatedIRI="mob-ssn:Service"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasEmbeddedSystem"/>
+            <Class abbreviatedIRI="ssn:System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:unitDeployedOn"/>
+            <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasComUnit"/>
+            <Class abbreviatedIRI="mob-ssn:NetworkInterface"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasDeployUnit"/>
+            <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasPowerUnit"/>
+            <Class abbreviatedIRI="mob-ssn:PowerSupply"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasProcessingUnit"/>
+            <Class abbreviatedIRI="mob-ssn:Processor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasStorageUnit"/>
+            <Class abbreviatedIRI="mob-ssn:Memory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:relatedToDevice"/>
+            <Class abbreviatedIRI="mob-ssn:Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Infrastructure"/>
+        <Class abbreviatedIRI="sosa:Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Infrastructure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sosa:hosts"/>
+            <Class abbreviatedIRI="sosa:Platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Infrastructure"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:isDescribedBy"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Input"/>
+        <Class abbreviatedIRI="mob-ssn:Variables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasPastCoverageArea"/>
+            <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasPastLocation"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+        <Class abbreviatedIRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:mediaSensedBy"/>
+            <Class abbreviatedIRI="sosa:Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:mediaHaving"/>
+            <Class abbreviatedIRI="mob-ssn:MultimediaValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:MultimediaValue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:mediaOfA"/>
+            <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Output"/>
+        <Class abbreviatedIRI="mob-ssn:Variables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Range"/>
+        <Class IRI="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+        <Class abbreviatedIRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:sensedBy"/>
+            <Class abbreviatedIRI="sosa:Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:scalarHaving"/>
+            <Class abbreviatedIRI="mob-ssn:ScalarValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:ScalarValue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:scalarOfA"/>
+            <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:SensingLocation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:centers"/>
+            <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:SensingRange"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:delimits"/>
+            <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasCapability"/>
+            <Class abbreviatedIRI="mob-ssn:Capability"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasInterfaces"/>
+            <Class abbreviatedIRI="mob-ssn:Interface"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasMetadata"/>
+            <Class abbreviatedIRI="mob-ssn:Metadata"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:hasVariables"/>
+            <Class abbreviatedIRI="mob-ssn:Variables"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:providedThrough"/>
+            <Class abbreviatedIRI="mob-ssn:Device"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:ServiceInteractionInterface"/>
+        <Class abbreviatedIRI="mob-ssn:Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:StaticSensor"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:Textual"/>
+        <Class abbreviatedIRI="mob-ssn:ScalarValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mob-ssn:UserInteractionInterface"/>
+        <Class abbreviatedIRI="mob-ssn:Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
+            <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:mediaSenses"/>
+            <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:senses"/>
+            <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCovers"/>
+            <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mob-ssn:isCurrentlyLocatedAt"/>
+            <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ssn:System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mob-ssn:embeddedOn"/>
+            <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/above"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/below"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/closeTo"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/distanceRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/contains"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/covers"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/crosses"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/locationRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/disjoint"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/distanceRelation"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/locationRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/equals"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/farFrom"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/distanceRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/leftOf"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/opposite"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/overlaps"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/rightOf"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/locationRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/touches"/>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy"/>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy"/>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centeredAround"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centers"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composedOf"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCoveredBy"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCovers"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyLocates"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isCurrentlyLocatedAt"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimitedBy"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimits"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:describes"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isDescribedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:embeddedOn"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasEmbeddedSystem"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasDeployUnit"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:unitDeployedOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasHardware"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:relatedToDevice"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastCoverageArea"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:previouslyCoveredBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastLocation"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPreviouslyLocated"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includedIn"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaHaving"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaOfA"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSensedBy"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSenses"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:producedBy"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:produces"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:providedThrough"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:provides"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarHaving"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarOfA"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mob-ssn:sensedBy"/>
+        <ObjectProperty abbreviatedIRI="mob-ssn:senses"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/above"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/below"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/closeTo"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/contains"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/covers"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/crosses"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/disjoint"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/distanceRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/equals"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/farFrom"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/leftOf"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/locationRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/opposite"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/overlaps"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/rightOf"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/touches"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#hasSubMap"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines"/>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#requestedBy"/>
+        <Class abbreviatedIRI="mob-ssn:Capability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines"/>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:atCoverageTime"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centeredAround"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centers"/>
+        <Class abbreviatedIRI="mob-ssn:SensingLocation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composedOf"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composes"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCoveredBy"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCovers"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyLocates"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimitedBy"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimits"/>
+        <Class abbreviatedIRI="mob-ssn:SensingRange"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:describes"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:embeddedOn"/>
+        <Class abbreviatedIRI="ssn:System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasCapability"/>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasComUnit"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasDeployUnit"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasEmbeddedSystem"/>
+        <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasHardware"/>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasInterfaces"/>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasLocationTime"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasMetadata"/>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastCoverageArea"/>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastLocation"/>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPowerUnit"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPreviouslyLocated"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasProcessingUnit"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasSoftware"/>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasStorageUnit"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasVariables"/>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includedIn"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includes"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isCurrentlyLocatedAt"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isDescribedBy"/>
+        <Class abbreviatedIRI="mob-ssn:Infrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaHaving"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaOfA"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaValue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSensedBy"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSenses"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:previouslyCoveredBy"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:produces"/>
+        <Class abbreviatedIRI="sosa:Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:providedThrough"/>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:provides"/>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:relatedToDevice"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarHaving"/>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarOfA"/>
+        <Class abbreviatedIRI="mob-ssn:ScalarValue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:sensedBy"/>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:senses"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mob-ssn:unitDeployedOn"/>
+        <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDateTimeDescription"/>
+        <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inDateTime"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inTemporalPosition"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inTimePosition"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
+        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalAfter"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalBefore"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalContains"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDisjoint"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDuring"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishes"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalIn"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMetBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlappedBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlaps"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStarts"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/above"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/below"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/closeTo"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/contains"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/covers"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/crosses"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/directionalRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/disjoint"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/distanceRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/equals"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/farFrom"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/hasMultimediaDescriptor"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/MultimediaDescriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/leftOf"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/locationRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/opposite"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/overlaps"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/rightOf"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/topologicalRelation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://mssn.sigappfr.org/mssn/touches"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#atSensingTime"/>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#hasSubMap"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy"/>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy"/>
+        <Class IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:atCoverageTime"/>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centeredAround"/>
+        <Class abbreviatedIRI="mob-ssn:SensingLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:centers"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composedOf"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:composes"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCoveredBy"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyCovers"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:currentlyLocates"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimitedBy"/>
+        <Class abbreviatedIRI="mob-ssn:SensingRange"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:delimits"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:describes"/>
+        <Class abbreviatedIRI="mob-ssn:Infrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:embeddedOn"/>
+        <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasCapability"/>
+        <Class abbreviatedIRI="mob-ssn:Capability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasComUnit"/>
+        <Class abbreviatedIRI="mob-ssn:NetworkInterface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasDeployUnit"/>
+        <Class abbreviatedIRI="mob-ssn:ExpansionCard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasEmbeddedSystem"/>
+        <Class abbreviatedIRI="ssn:System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasHardware"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasInterfaces"/>
+        <Class abbreviatedIRI="mob-ssn:Interface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasLocationTime"/>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasMetadata"/>
+        <Class abbreviatedIRI="mob-ssn:Metadata"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastCoverageArea"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPastLocation"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPowerUnit"/>
+        <Class abbreviatedIRI="mob-ssn:PowerSupply"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasPreviouslyLocated"/>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasProcessingUnit"/>
+        <Class abbreviatedIRI="mob-ssn:Processor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasSoftware"/>
+        <Class abbreviatedIRI="mob-ssn:Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasStorageUnit"/>
+        <Class abbreviatedIRI="mob-ssn:Memory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:hasVariables"/>
+        <Class abbreviatedIRI="mob-ssn:Variables"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includedIn"/>
+        <Class abbreviatedIRI="mob-ssn:CoverageArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:includes"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isCurrentlyLocatedAt"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:isDescribedBy"/>
+        <Class IRI="http://mssn.sigappfr.org/mssn/LocationMap"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaHaving"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaOfA"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSensedBy"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:mediaSenses"/>
+        <Class abbreviatedIRI="mob-ssn:MultimediaProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:previouslyCoveredBy"/>
+        <Class abbreviatedIRI="mob-ssn:MobileSensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:producedBy"/>
+        <Class abbreviatedIRI="sosa:Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:providedThrough"/>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:provides"/>
+        <Class abbreviatedIRI="mob-ssn:Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:relatedToDevice"/>
+        <Class abbreviatedIRI="mob-ssn:Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarHaving"/>
+        <Class abbreviatedIRI="mob-ssn:ScalarValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:scalarOfA"/>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:sensedBy"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:senses"/>
+        <Class abbreviatedIRI="mob-ssn:ScalarProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mob-ssn:unitDeployedOn"/>
+        <Class abbreviatedIRI="mob-ssn:Hardware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasEnd"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
+        <Class IRI="http://www.w3.org/2006/time#TRS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalAfter"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalBefore"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalContains"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDisjoint"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDuring"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishes"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalIn"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMetBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlappedBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlaps"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStarts"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#osDetails"/>
+        <Class abbreviatedIRI="mob-ssn:Software"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDate"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTime"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTimeStamp"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDgYear"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDgYearMonth"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2006/time#xsdDateTime"/>
+        <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#osDetails"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/AnnotationDescriptor</IRI>
+        <Literal>AnnotationDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/Audio</IRI>
+        <Literal>Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/AudioDescriptor</IRI>
+        <Literal>AudioDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/AudioSegment</IRI>
+        <Literal>An audio segment is a segment for modeling audio data of MultimediaData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/AudioSegment</IRI>
+        <Literal>AudioSegment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/BoundingBoxDescriptor</IRI>
+        <Literal>BoundingBoxDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/CameraMotionDescriptor</IRI>
+        <Literal>CameraMotionDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/ColorLayoutDescriptor</IRI>
+        <Literal>ColorLayoutDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/ColorStructureDescriptor</IRI>
+        <Literal>ColorStructureDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/ContourShapeDescriptor</IRI>
+        <Literal>ContourShapeDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/DominatColorDescriptor</IRI>
+        <Literal>DominantColorDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/EdgeHistogramDescriptor</IRI>
+        <Literal>EdgeHistogramDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/FaceRecognitionDescriptor</IRI>
+        <Literal>FaceRecognitionDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/FundamentalFrequency</IRI>
+        <Literal>FundementalFrequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/HarmonicDescriptor</IRI>
+        <Literal>HarmonicDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/HarmonicSpectralCentroid</IRI>
+        <Literal>HormonicSpectralCentroid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/HarmonicSpectralDeviation</IRI>
+        <Literal>HarmonicSpectralDeviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/HarmonicSpectralSpread</IRI>
+        <Literal>HarmonicSpectralSpread</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/HarmonicSpectralVariation</IRI>
+        <Literal>HarmonicSpectralVariation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/Image</IRI>
+        <Literal>Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/Location</IRI>
+        <Literal>Locations are the essential component of a Location Map. Each location can be viewed as a set of points in space that form a random or geometrical shape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/Location</IRI>
+        <Literal>Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://mssn.sigappfr.org/mssn/Location</IRI>
+        <Literal>Locations are the essential component of a Location Map. Each location can be viewed as a set of points in space that form a random or geometrical shape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/LocationMap</IRI>
+        <Literal>A location map describes the spatial element of an infrastructure. 
+It is composed of a set of locations that are connected via spatial relations (topological, directional, distance...). 
+The entire set of locations and inter-location relations constitute the map of an infrastructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/LocationMap</IRI>
+        <Literal>LocationMap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://mssn.sigappfr.org/mssn/LocationMap</IRI>
+        <Literal>A location map describes the spatial element of an infrastructure. 
+It is composed of a set of locations that are connected via spatial relations (topological, directional, distance...). 
+The entire set of locations and inter-location relations constitute the map of an infrastructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/LogAttackTime</IRI>
+        <Literal>LogAttackTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MediaConcerned</IRI>
+        <Literal>MediaConcerned is a concept that is used as a property of a media sensor for indicating a kind of multimedia data that can be produce by a given media sensor.
+For example, a video camera which capture audio and video has &quot;Audio&quot; and &quot;Video&quot; as its media concerned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MediaConcerned</IRI>
+        <Literal>MediaConcerned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MediaDurationDescriptor</IRI>
+        <Literal>MediaDurationDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MediaTimePointDescriptor</IRI>
+        <Literal>MediaTimePointDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MotionActivityDescriptor</IRI>
+        <Literal>MotionActivityDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MotionDescriptor</IRI>
+        <Literal>MotionDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MultimediaData</IRI>
+        <Literal>A multimedia data is an observation value of a media sensor. A multimedia data can contains multiple media segment where each segment can be decomposed into multiple sub-mediasegments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MultimediaData</IRI>
+        <Literal>MultimediaData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MultimediaDescriptor</IRI>
+        <Literal>MultimediaDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MultimediaSegment</IRI>
+        <Literal>A multimedia segment is a part of a multimedia data.  It is used for represent a segment or a track of a multimedia data.  For example,  a video file can have one video track, one audio track and one subtitle track.  This can be represented by modeling a &quot;MultimediaData&quot; concept with three MediaSegment concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/MultimediaSegment</IRI>
+        <Literal>MultimediaSegment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/ParametricMotionDescriptor</IRI>
+        <Literal>ParametricMotionDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/PointDescriptor</IRI>
+        <Literal>PointDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/PowerDescriptor</IRI>
+        <Literal>PowerDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/ScalableColorDescriptor</IRI>
+        <Literal>ScalableColorDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpatialDescriptor</IRI>
+        <Literal>SpatialDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpectralCentroid</IRI>
+        <Literal>SpectralCentroid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpectrumBasis</IRI>
+        <Literal>SpectrumBasis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpectrumCentroid</IRI>
+        <Literal>SpectrumCentroid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpectrumEnvelop</IRI>
+        <Literal>SpectrumEnvelop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpectrumFlatness</IRI>
+        <Literal>SpectrumFlatness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpectrumProjection</IRI>
+        <Literal>SpectrumProjection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/SpectrumSpread</IRI>
+        <Literal>SpectrumSpread</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/TemporalCentroid</IRI>
+        <Literal>TemporalCentroid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/TemporalDescriptor</IRI>
+        <Literal>TemporalDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/TextAnnotationDescriptor</IRI>
+        <Literal>TextAnnotationDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/TrajectoryDescriptor</IRI>
+        <Literal>TrajectoryDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/Video</IRI>
+        <Literal>Video</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/VisualDescriptor</IRI>
+        <Literal>VisualDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/VisualSegment</IRI>
+        <Literal>A visual segment is a media segment for modeling visual data (e.g. video segment, image segment)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/VisualSegment</IRI>
+        <Literal>VisualSegment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/WarpingParameters</IRI>
+        <Literal>WarpingParameters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/Waveform</IRI>
+        <Literal>Waveform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/above</IRI>
+        <Literal>isAbove</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/below</IRI>
+        <Literal>isBelow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/closeTo</IRI>
+        <Literal>isCloseTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/contains</IRI>
+        <Literal>contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/covers</IRI>
+        <Literal>covers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/crosses</IRI>
+        <Literal>crosses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <IRI>http://mssn.sigappfr.org/mssn/directionalRelation</IRI>
+        <Literal>An abstract relation for directional location relations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/directionalRelation</IRI>
+        <Literal>hasDirectionalLocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/disjoint</IRI>
+        <Literal>isDisjointWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <IRI>http://mssn.sigappfr.org/mssn/distanceRelation</IRI>
+        <Literal>An abstract relation for distance relations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/distanceRelation</IRI>
+        <Literal>hasDistanceRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/equals</IRI>
+        <Literal>equals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/farFrom</IRI>
+        <Literal>isFarFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/hasMultimediaDescriptor</IRI>
+        <Literal>A relation between a media segment and a media descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/hasMultimediaDescriptor</IRI>
+        <Literal>hasMultimediaDescriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/hasMultimediaSegment</IRI>
+        <Literal>A relation between MultimediaData and MediaSegment concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/hasMultimediaSegment</IRI>
+        <Literal>hasMultimediaSegment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/leftOf</IRI>
+        <Literal>isLeftOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://mssn.sigappfr.org/mssn/locationRelation</IRI>
+        <Literal>A location relation describes a relation between a pair of locations e.g. &quot;Table1&quot; opposite &quot;Table2&quot;.   
+
+A location relation can be either topological relation, directional relation or distance relation.
+
+This relation intends to be use as an abstract relation for other location relations.   Hence, it may not be used directly.    Only sub-relations of this relation should be used</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/locationRelation</IRI>
+        <Literal>hasLocationRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/opposite</IRI>
+        <Literal>isOppositeOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/overlaps</IRI>
+        <Literal>overlaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/rightOf</IRI>
+        <Literal>isRightOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <IRI>http://mssn.sigappfr.org/mssn/topologicalRelation</IRI>
+        <Literal>An abstract relation for topological location relations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/topologicalRelation</IRI>
+        <Literal>hasTopologicalRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mssn.sigappfr.org/mssn/touches</IRI>
+        <Literal>touches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalAngle</IRI>
+        <Literal>HorizontalAngle defines the trigonometric horizontal spread of a system&apos;s capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalAngle</IRI>
+        <Literal>HorizontalAngle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalAngle</IRI>
+        <Literal>A temperature sensor has a 360° vertical and horizontal angles, i.e., can sense temperature in any given direction.
+
+While a tele-surveillance camera might have an horizontal spread over a 45° angle and a vertical spread over a 30° angle. Any object outside the spread of these angles is not sensed by the camera lens.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle</IRI>
+        <Literal>The maximal horizontal sensing angle provided by the sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle</IRI>
+        <Literal>HorizontalSensingAngle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle</IRI>
+        <Literal>For example a temperature, humidity, noise, etc. sensor has a vertical and horizontal sensing angles are 360°. This changes the geometry of the CovergaeArea to a circle.
+In other cases, e.g., static video surveillance cameras the vertical and horizontal sensing angles differ from one camera to another: e.g., 30°, 45°,  60°, etc. This changes the geometry of the CoverageArea to a sector in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalAngle</IRI>
+        <Literal>VerticalAngle defines the trigonometric vertical spread of a system&apos;s capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalAngle</IRI>
+        <Literal>VerticalAngle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalAngle</IRI>
+        <Literal>A temperature sensor has a 360° vertical and horizontal angles, i.e., can sense temperature in any given direction.
+
+While a tele-surveillance camera might have an horizontal spread over a 45° angle and a vertical spread over a 30° angle. Any object outside the spread of these angles is not sensed by the camera lens.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle</IRI>
+        <Literal>The maximal vertical sensing angle provided by the sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle</IRI>
+        <Literal>VerticalSensingAngle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle</IRI>
+        <Literal>For example a temperature, humidity, noise, etc. sensor has a vertical and horizontal sensing angles are 360°. This changes the geometry of the CovergaeArea to a circle.
+In other cases, e.g., static video surveillance cameras the vertical and horizontal sensing angles differ from one camera to another: e.g., 30°, 45°,  60°, etc. This changes the geometry of the CoverageArea to a sector in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#atSensingTime</IRI>
+        <Literal>Denotes the sensing timestamp for a specific Observation Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#atSensingTime</IRI>
+        <Literal>hasSensingTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#hasSubMap</IRI>
+        <Literal>The relationship between a location map and other included location maps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#hasSubMap</IRI>
+        <Literal>hasSubMap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy</IRI>
+        <Literal>Helps identify the horizontal rotaional spread of a CoverageArea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy</IRI>
+        <Literal>hasHorizontalSpreadDefinedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines</IRI>
+        <Literal>Helps identify the horizontal rotational spread of a CoverageArea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines</IRI>
+        <Literal>definesHorizontalSpreadOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#osDetails</IRI>
+        <Literal>Describes additional information about the software &amp; operating system of a Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#osDetails</IRI>
+        <Literal>osDetails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#requestedBy</IRI>
+        <Literal>Defines the relation between a service&apos;s Capability / Functionality and the user defined Goals that need to be satisfied.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#requestedBy</IRI>
+        <Literal>isRequestedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy</IRI>
+        <Literal>Helps identify the vertical rotaional spread of a CoverageArea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy</IRI>
+        <Literal>hasVerticalSpreadDefinedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines</IRI>
+        <Literal>Helps identify the vertical rotaional spread of a CoverageArea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines</IRI>
+        <Literal>definesVerticalSpreadOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Capability</AbbreviatedIRI>
+        <Literal>The functionality provided by a Service is described by its Capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Capability</AbbreviatedIRI>
+        <Literal>Capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Capability</AbbreviatedIRI>
+        <Literal>The functionality provided by a Service is described by its Capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:CoverageArea</AbbreviatedIRI>
+        <Literal>A Coverage Area is a geographical zone that includes a set of Locations within the range of at least one sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:CoverageArea</AbbreviatedIRI>
+        <Literal>CoverageArea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:CoverageArea</AbbreviatedIRI>
+        <Literal>A CoverageArea is a geographical zone that includes a set of Locations within the range of one sensor. The CoverageArea  is defined by a location L, vertical and horizontal angles VA / HA, and a range R where:
+      L is the Location, i.e., of the location of the sensor covering the area (depending on the sensor type Mobile | Scalar the CoverageArea moves, rotates, or remains still).
+      VA / HA are the Vertical / Horizontal Angles, specified in the sensor&apos;s technical sheet.
+      R is the Range of the sensor, i.e., the distance in meters in any given direction such that the sensor is still capable of sensing. This value is also specified by the sensor&apos;s technical sheet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <AbbreviatedIRI>mob-ssn:CoverageArea</AbbreviatedIRI>
+        <Literal>Example 1: 
+For a mobile temperature sensor sens1:
+       L is the location of the sensor
+       VA = HA = 360°
+       R = 15m
+Therefore the coverage area is the sphere of center P and radius (range) 15m.
+
+Example 2: 
+For a static video surveillance camera sens2:
+       L is the location of the sensor
+       VA = 45° / HA = 30°
+       R = 30m
+Therefore the coverage area is the sector of space centered around the sensor&apos;s location and spreading on a 45° vertical angle, a 30° horizontal angle, and extending to a 30m range.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Device</AbbreviatedIRI>
+        <Literal>A Device is an electonic equipment capable of one or more computing functions and supporting the installation of firmware or third-party software. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Device</AbbreviatedIRI>
+        <Literal>Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Device</AbbreviatedIRI>
+        <Literal>A Device is an electronic equipment capable of one or more computing functions and supporting the installation of firmware or third-party software.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <AbbreviatedIRI>mob-ssn:Device</AbbreviatedIRI>
+        <Literal>A Mobile Phone is a Device capable of sensing data through its sensors, processing data, storing data, and communicating with other devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:ExpansionCard</AbbreviatedIRI>
+        <Literal>The Expansion Card is a plugin (additional) card. Systems (e.g., sensors) are deployed on the Expansion Card of a Device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:ExpansionCard</AbbreviatedIRI>
+        <Literal>ExpansionCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:ExpansionCard</AbbreviatedIRI>
+        <Literal>The Expansion Card is a plugin (additional) card. Systems (e.g., sensors) are deployed on the Expansion Card of a Device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <AbbreviatedIRI>mob-ssn:ExpansionCard</AbbreviatedIRI>
+        <Literal>Mobile phone sensors are deployed on the expansion card of the device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Hardware</AbbreviatedIRI>
+        <Literal>A Hardware is a component of a Device responsible of specific functionalities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Hardware</AbbreviatedIRI>
+        <Literal>Hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Hardware</AbbreviatedIRI>
+        <Literal>A Hardware is a component of a Device responsible of specific functionalities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Infrastructure</AbbreviatedIRI>
+        <Literal>An infrastructure is a real world physical infrastructure or environment where a sensor network might be deployed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Infrastructure</AbbreviatedIRI>
+        <Literal>Infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Infrastructure</AbbreviatedIRI>
+        <Literal>An infrastructure is a real world physical infrastructure or environment where a sensor network might be deployed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <AbbreviatedIRI>mob-ssn:Infrastructure</AbbreviatedIRI>
+        <Literal>Building, Office, City, Mall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Input</AbbreviatedIRI>
+        <Literal>Input is the set of variables and constraints required at the input end of a service in order to achieve a correct exection of the service&apos;s functionality (capability).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Input</AbbreviatedIRI>
+        <Literal>Input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Input</AbbreviatedIRI>
+        <Literal>Input is the set of variables and constraints required at the input end of a service in order to achieve a correct exection of the service&apos;s functionality (capability).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Interface</AbbreviatedIRI>
+        <Literal>The interface represents how a service can be contacted by / connected to other entities such as service requesters or other services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Interface</AbbreviatedIRI>
+        <Literal>Interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Interface</AbbreviatedIRI>
+        <Literal>The interface represents how a service can be contacted by / connected to other entities such as service requesters or other services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Memory</AbbreviatedIRI>
+        <Literal>The set of all memories of a Device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Memory</AbbreviatedIRI>
+        <Literal>Memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Memory</AbbreviatedIRI>
+        <Literal>The set of all memories of a Device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Metadata</AbbreviatedIRI>
+        <Literal>Metadata represent the properties that describe a Service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Metadata</AbbreviatedIRI>
+        <Literal>Metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Metadata</AbbreviatedIRI>
+        <Literal>Metadata represent the properties that describe a Service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <AbbreviatedIRI>mob-ssn:Metadata</AbbreviatedIRI>
+        <Literal>Accuracy, Reliability, Owner, Network-related QoS, Cost, Robustness...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:MobileSensor</AbbreviatedIRI>
+        <Literal>A Mobile Sensor is a sensor that has the ability to move around, and change position in time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:MobileSensor</AbbreviatedIRI>
+        <Literal>MobileSensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:MobileSensor</AbbreviatedIRI>
+        <Literal>A Mobile Sensor is a sensor that has the ability to move around, and change position in time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:MultimediaProperty</AbbreviatedIRI>
+        <Literal>MultimediaProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:MultimediaValue</AbbreviatedIRI>
+        <Literal>MultimediaValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:NetworkInterface</AbbreviatedIRI>
+        <Literal>The Network Interface is part of the Hardware responsible for communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:NetworkInterface</AbbreviatedIRI>
+        <Literal>NetworkInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:NetworkInterface</AbbreviatedIRI>
+        <Literal>The Network Interface is part of the Hardware responsible for communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Output</AbbreviatedIRI>
+        <Literal>Output is the set of variables and effects generated by a service after a correct exection of the service&apos;s functionality (capability).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Output</AbbreviatedIRI>
+        <Literal>Output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Output</AbbreviatedIRI>
+        <Literal>Output is the set of variables and effects generated by a service after a correct exection of the service&apos;s functionality (capability).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:PowerSupply</AbbreviatedIRI>
+        <Literal>Power Supply is the Hardware responsible for providing power in order to allow the Device optimal functioning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:PowerSupply</AbbreviatedIRI>
+        <Literal>PowerSupply</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:PowerSupply</AbbreviatedIRI>
+        <Literal>Power Supply is the Hardware responsible for providing power in order to allow the Device optimal functioning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Processor</AbbreviatedIRI>
+        <Literal>The Processor is the Hardware responsible for the processing of data in the Devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Processor</AbbreviatedIRI>
+        <Literal>Processor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Processor</AbbreviatedIRI>
+        <Literal>The Processor is the Hardware responsible for the processing of data in the Devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Range</AbbreviatedIRI>
+        <Literal>Range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Range</AbbreviatedIRI>
+        <Literal>The range is the maximal distance (in meters) that delimits a system&apos;s operational capability. 
+i.e., The maximal distance that delimits a sensor&apos;s sensing capability, an actuator&apos;s actuation capability, a sampler&apos;s sampling capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <AbbreviatedIRI>mob-ssn:Range</AbbreviatedIRI>
+        <Literal>If a sensor has a Range of 10 m, it cannot sense properties that are 20 m away.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:ScalarProperty</AbbreviatedIRI>
+        <Literal>ScalarProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:ScalarValue</AbbreviatedIRI>
+        <Literal>ScalarValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:SensingLocation</AbbreviatedIRI>
+        <Literal>SensingLocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:SensingLocation</AbbreviatedIRI>
+        <Literal>The SensingLocation is the location of the sensor that covers this CoverageArea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:SensingRange</AbbreviatedIRI>
+        <Literal>SensingRange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:SensingRange</AbbreviatedIRI>
+        <Literal>The maximal sensing distance provided by the sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Service</AbbreviatedIRI>
+        <Literal>A Service represents entities capable of providing some value (or a set of values) relative to a given domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Service</AbbreviatedIRI>
+        <Literal>Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Service</AbbreviatedIRI>
+        <Literal>A Service represents entities capable of providing some value (or a set of values) relative to a given domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:ServiceInteractionInterface</AbbreviatedIRI>
+        <Literal>A ServiceInteractionInterface is used to connect a Service to other Services for composite Service orchestration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:ServiceInteractionInterface</AbbreviatedIRI>
+        <Literal>ServiceInteractionInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:ServiceInteractionInterface</AbbreviatedIRI>
+        <Literal>A ServiceInteractionInterface is used to connect a Service to other Services for composite Service orchestration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Software</AbbreviatedIRI>
+        <Literal>The set of all operating systems, applications and programs running on a Device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Software</AbbreviatedIRI>
+        <Literal>Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:StaticSensor</AbbreviatedIRI>
+        <Literal>A Static Sensor is a sensor that does not move, or change position after its deployment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:StaticSensor</AbbreviatedIRI>
+        <Literal>StaticSensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:StaticSensor</AbbreviatedIRI>
+        <Literal>A Static Sensor is a sensor that does not move, or change position after its deployment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Textual</AbbreviatedIRI>
+        <Literal>Textual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:UserInteractionInterface</AbbreviatedIRI>
+        <Literal>The UserInteractionInterface is used by users who request services to allow them the exchange of requests / information / variables with a service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:UserInteractionInterface</AbbreviatedIRI>
+        <Literal>UserInteractionInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:UserInteractionInterface</AbbreviatedIRI>
+        <Literal>The UserInteractionInterface is used by users who request services to allow them the exchange of requests / information / variables with a service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:Variables</AbbreviatedIRI>
+        <Literal>Variables represent the variables that are used / generated by a service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:Variables</AbbreviatedIRI>
+        <Literal>Variables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:Variables</AbbreviatedIRI>
+        <Literal>Variables represent the variables that are used / generated by a service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:atCoverageTime</AbbreviatedIRI>
+        <Literal>hasCoverageTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:atCoverageTime</AbbreviatedIRI>
+        <Literal>Relation that maps a CoverageArea covered by a Sensor to a time:TemporalEntity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:centeredAround</AbbreviatedIRI>
+        <Literal>isCenteredAround</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:centeredAround</AbbreviatedIRI>
+        <Literal>Relation that maps a Sensor&apos;s Location to its CoverageArea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:centers</AbbreviatedIRI>
+        <Literal>centers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:centers</AbbreviatedIRI>
+        <Literal>Relation that maps a CoverageArea to its Sensor&apos;s Location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:composedOf</AbbreviatedIRI>
+        <Literal>isComposedOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:composedOf</AbbreviatedIRI>
+        <Literal>The relation between a LocationMap and the set of individual Locations that compose it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:composes</AbbreviatedIRI>
+        <Literal>composes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:composes</AbbreviatedIRI>
+        <Literal>The relation between the set of individual Locations that compose a LocationMap.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:currentlyCoveredBy</AbbreviatedIRI>
+        <Literal>The inverse of currentlyCoversA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:currentlyCoveredBy</AbbreviatedIRI>
+        <Literal>isCurrentlyCoveredBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:currentlyCoveredBy</AbbreviatedIRI>
+        <Literal>The inverse of currentlyCoversA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:currentlyCovers</AbbreviatedIRI>
+        <Literal>currentlyCovers is the object property that allows finding the Coverage Area of a Stationary or Mobile Sensor in time. The Coverage Area of a Stationary Sensor does not change in time, this is not the case for a Mobile Sensor. At a point t in time, a Stationary or Mobile Sensor can have exactly one Coverage Area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:currentlyCovers</AbbreviatedIRI>
+        <Literal>currentlyCovers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:currentlyCovers</AbbreviatedIRI>
+        <Literal>currentlyCovers is the object property that allows finding the Coverage Area of a Stationary or Mobile Sensor in time. The Coverage Area of a Stationary Sensor does not vary in time, this is not the case for a Mobile Sensor. At a point t in time, a Stationary or Mobile Sensor can have exactly one Coverage Area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:currentlyLocates</AbbreviatedIRI>
+        <Literal>The inverse of currentlyLocatedAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:currentlyLocates</AbbreviatedIRI>
+        <Literal>currentlyLocates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:currentlyLocates</AbbreviatedIRI>
+        <Literal>The inverse of currentlyLocatedAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:delimitedBy</AbbreviatedIRI>
+        <Literal>isDelimitedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:delimitedBy</AbbreviatedIRI>
+        <Literal>Defines the relation between CoverageArea and the sensor&apos;s SensingRange.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:delimits</AbbreviatedIRI>
+        <Literal>delimits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:delimits</AbbreviatedIRI>
+        <Literal>Defines the impact of the sensor&apos;s SensingRange on the geomerty of the CoverageArea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:describes</AbbreviatedIRI>
+        <Literal>describes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:describes</AbbreviatedIRI>
+        <Literal>The relation between a LocationMap and an Infrastructure helps represent the spatial elements of the latter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:embeddedOn</AbbreviatedIRI>
+        <Literal>isEmbeddedOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:embeddedOn</AbbreviatedIRI>
+        <Literal>The relation helps discover the Systems deployed or embedded on a Device&apos;s ExpansionCard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasCapability</AbbreviatedIRI>
+        <Literal>hasCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasCapability</AbbreviatedIRI>
+        <Literal>This relation maps a Service to its Capability description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasComUnit</AbbreviatedIRI>
+        <Literal>hasNetworkInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasComUnit</AbbreviatedIRI>
+        <Literal>This relation maps the Hardware of a Device to its NetworkInterface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasDeployUnit</AbbreviatedIRI>
+        <Literal>hasExpansionCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasDeployUnit</AbbreviatedIRI>
+        <Literal>This relation maps the Hardware of a Device to its ExpansionCard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasEmbeddedSystem</AbbreviatedIRI>
+        <Literal>hasEmbeddedSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasEmbeddedSystem</AbbreviatedIRI>
+        <Literal>This relation maps Systems to ExpansionCards where they are embedded or deployed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasHardware</AbbreviatedIRI>
+        <Literal>hasHardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasHardware</AbbreviatedIRI>
+        <Literal>This relation maps a Device to its Hardware.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasInterfaces</AbbreviatedIRI>
+        <Literal>hasInterfaces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasInterfaces</AbbreviatedIRI>
+        <Literal>This relation maps a Service to its Interfaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasLocationTime</AbbreviatedIRI>
+        <Literal>hasLocationTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasLocationTime</AbbreviatedIRI>
+        <Literal>Relation that maps a Location of a Sensor to a time:TemporalEntity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasMetadata</AbbreviatedIRI>
+        <Literal>hasMetadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasMetadata</AbbreviatedIRI>
+        <Literal>This relation maps a Service to its Metadata descriptors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasPastCoverageArea</AbbreviatedIRI>
+        <Literal>hasPastCoverageArea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasPastCoverageArea</AbbreviatedIRI>
+        <Literal>This relation maps MobileSensors to their previous CoverageAreas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:hasPastLocation</AbbreviatedIRI>
+        <Literal>This allows the tracking of mobile sensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasPastLocation</AbbreviatedIRI>
+        <Literal>hasPastLocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasPastLocation</AbbreviatedIRI>
+        <Literal>Maps each sensor to his past Locations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasPowerUnit</AbbreviatedIRI>
+        <Literal>hasPowerSupply</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasPowerUnit</AbbreviatedIRI>
+        <Literal>This relation maps the Hardware of a Device to its PowerSupply.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasPreviouslyLocated</AbbreviatedIRI>
+        <Literal>hasPreviouslyLocated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasPreviouslyLocated</AbbreviatedIRI>
+        <Literal>Maps a Location to MobileSensors that were located at it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasProcessingUnit</AbbreviatedIRI>
+        <Literal>hasProcessor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasProcessingUnit</AbbreviatedIRI>
+        <Literal>This relation maps the Hardware of a Device to its ProcessingUnit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasSoftware</AbbreviatedIRI>
+        <Literal>hasSoftware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasSoftware</AbbreviatedIRI>
+        <Literal>This relation maps a Device to its Software.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasStorageUnit</AbbreviatedIRI>
+        <Literal>hasMemory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasStorageUnit</AbbreviatedIRI>
+        <Literal>This relation maps the Hardware of a Device to its Memory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:hasVariables</AbbreviatedIRI>
+        <Literal>hasVariables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:hasVariables</AbbreviatedIRI>
+        <Literal>Maps a Service to the Variables it uses / generates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:includedIn</AbbreviatedIRI>
+        <Literal>The inverse of includes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:includedIn</AbbreviatedIRI>
+        <Literal>isIncludedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:includedIn</AbbreviatedIRI>
+        <Literal>The inverse of includes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:includes</AbbreviatedIRI>
+        <Literal>includes is the object property that specifies which Locations are included in a Coverage Area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:includes</AbbreviatedIRI>
+        <Literal>includes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:includes</AbbreviatedIRI>
+        <Literal>includes is the object property that specifies which Locations are included in a Coverage Area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:isCurrentlyLocatedAt</AbbreviatedIRI>
+        <Literal>curentlyLocatedAt is the object property that allows to localize a Stationary or Mobile Sensor in time. The Location value for a Stationary Sensor does not change in time, this is not the case for a Moble Sensor. At a point t in time, a Stationary or Mobile Sensor can have exactly one Location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:isCurrentlyLocatedAt</AbbreviatedIRI>
+        <Literal>isCurrentlyLocatedAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:isCurrentlyLocatedAt</AbbreviatedIRI>
+        <Literal>currentlyLocatedAt is the object property that allows to localize a Stationary or Mobile Sensor in time. The  Location value for a Stationary Sensor does not change in time, this is not the case for a Mobile Sensor. At a point t in time, a Stationary or Mobile Sensor can have exactly one Location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:isDescribedBy</AbbreviatedIRI>
+        <Literal>isDescribedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:isDescribedBy</AbbreviatedIRI>
+        <Literal>The relation between an Infrastructure and it LocationMap helps represent the spatial elements of the Infrastructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:mediaHaving</AbbreviatedIRI>
+        <Literal>hasMultimediaValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:mediaHaving</AbbreviatedIRI>
+        <Literal>Maps an &apos;Observable Property&apos; of type MultimediaProperty to its concrete ObservationValue of type MultimediaValue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:mediaOfA</AbbreviatedIRI>
+        <Literal>isMultimediaValueOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:mediaOfA</AbbreviatedIRI>
+        <Literal>Maps a concrete ObservationValue of type MultimediaValue to its &apos;Observable Property&apos; of type MultimediaProperty .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:mediaSensedBy</AbbreviatedIRI>
+        <Literal>isMultimediaSensedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:mediaSensedBy</AbbreviatedIRI>
+        <Literal>Maps a MultimediaProperty to a Sensor capable of observing it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:mediaSenses</AbbreviatedIRI>
+        <Literal>mediaSenses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:mediaSenses</AbbreviatedIRI>
+        <Literal>Maps a Sensor to a MultimediaProperty it can observe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:previouslyCoveredBy</AbbreviatedIRI>
+        <Literal>isPreviouslyCoveredBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:previouslyCoveredBy</AbbreviatedIRI>
+        <Literal>Maps a CoverageArea to MobileSensors that used to cover it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:producedBy</AbbreviatedIRI>
+        <Literal>isProducedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:producedBy</AbbreviatedIRI>
+        <Literal>Maps an ObservationValue to the Observation process that created the value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:produces</AbbreviatedIRI>
+        <Literal>produces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:produces</AbbreviatedIRI>
+        <Literal>Maps an Observation process to the ObservationValues that it produced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:providedThrough</AbbreviatedIRI>
+        <Literal>isProvidedThrough</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:providedThrough</AbbreviatedIRI>
+        <Literal>Maps a Sevice to the Devices that provide it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:provides</AbbreviatedIRI>
+        <Literal>provides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:provides</AbbreviatedIRI>
+        <Literal>Maps a Device to the Services it provides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:relatedToDevice</AbbreviatedIRI>
+        <Literal>isRelatedToDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:relatedToDevice</AbbreviatedIRI>
+        <Literal>Maps a Hardware to a Device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:scalarHaving</AbbreviatedIRI>
+        <Literal>hasScalarValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:scalarHaving</AbbreviatedIRI>
+        <Literal>Maps an &apos;Observable Property&apos; of type ScalarPropertyto its concrete ObservationValue of type ScalarValue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:scalarOfA</AbbreviatedIRI>
+        <Literal>isScalarValueOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:scalarOfA</AbbreviatedIRI>
+        <Literal>Maps a concrete ObservationValue of type ScalarValue to its &apos;Observable Property&apos; of type ScalarProperty .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:sensedBy</AbbreviatedIRI>
+        <Literal>The inverse of senses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:sensedBy</AbbreviatedIRI>
+        <Literal>isScalarSensedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:sensedBy</AbbreviatedIRI>
+        <Literal>The inverse of senses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mob-ssn:senses</AbbreviatedIRI>
+        <Literal>senses is the object property mapping a Media or Scalar Sensor to a set of sensed Properties. A Scalar Sensor can only sense a set of Scalar Properties. A Media Sensor can sense a set of Scalar and Multimedia Properties. A Media Sensor has to a least sense one Multimedia Property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:senses</AbbreviatedIRI>
+        <Literal>scalarSenses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:senses</AbbreviatedIRI>
+        <Literal>senses is the object property mapping a Media or Scalar Sensor to a set of sensed Properties. A Scalar Sensor can only sense a set of Scalar Properties. A Media Sensor can sense a set of Scalar and Multimedia Properties. A Media Sensor has to at least sense one Multimedia Property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mob-ssn:unitDeployedOn</AbbreviatedIRI>
+        <Literal>isExpansionCardOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>mob-ssn:unitDeployedOn</AbbreviatedIRI>
+        <Literal>Maps an ExpansionCard to the Hardware it belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2006/time#DateTimeInterval</IRI>
+        <Literal xml:lang="en">DateTimeInterval is a subclass of ProperInterval, defined using the multi-element DateTimeDescription.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#DateTimeInterval</IRI>
+        <Literal xml:lang="en">Date-timeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#DateTimeInterval</IRI>
+        <Literal xml:lang="en">DateTimeInterval is a subclass of ProperInterval, defined using the multi-element DateTimeDescription.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <IRI>http://www.w3.org/2006/time#DateTimeInterval</IRI>
+        <Literal xml:lang="en">:DateTimeInterval can only be used for an interval whose limits coincide with a date-time element aligned to the calendar and timezone indicated. For example, while both have a duration of one day, the 24-hour interval beginning at midnight at the beginning of 8 May in Central Europe can be expressed as a :DateTimeInterval, but the 24-hour interval starting at 1:30pm cannot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2006/time#Instant</IRI>
+        <Literal xml:lang="en">A temporal entity with zero extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Instant</IRI>
+        <Literal xml:lang="en">TimeInstant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Instant</IRI>
+        <Literal xml:lang="en">A temporal entity with zero extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2006/time#Interval</IRI>
+        <Literal xml:lang="en">A temporal entity with an extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#Interval</IRI>
+        <Literal xml:lang="en">TimeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#Interval</IRI>
+        <Literal xml:lang="en">A temporal entity with an extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2006/time#ProperInterval</IRI>
+        <Literal xml:lang="en">A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#ProperInterval</IRI>
+        <Literal xml:lang="en">ProperInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#ProperInterval</IRI>
+        <Literal xml:lang="en">A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2006/time#TRS</IRI>
+        <Literal xml:lang="en">A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#TRS</IRI>
+        <Literal xml:lang="en">TemporalReferenceSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://www.w3.org/2006/time#TRS</IRI>
+        <Literal xml:lang="en">A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <IRI>http://www.w3.org/2006/time#TRS</IRI>
+        <Literal xml:lang="en">A taxonomy of temporal reference systems is provided in ISO 19108:2002 [ISO19108], including (a) calendar + clock systems; (b) temporal coordinate systems (i.e. numeric offset from an epoch); (c) temporal ordinal reference systems (i.e. ordered sequence of named intervals, not necessarily of equal duration).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#TemporalEntity</IRI>
+        <Literal>TemporalEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#hasBeginning</IRI>
+        <Literal>hasBegining</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#hasDateTimeDescription</IRI>
+        <Literal>hasDateTimeDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#hasEnd</IRI>
+        <Literal>hasEnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#hasTRS</IRI>
+        <Literal>hasTRS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#inDateTime</IRI>
+        <Literal>inDateTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#inTemporalPosition</IRI>
+        <Literal>inTemporalPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#inTimePosition</IRI>
+        <Literal>inTimePosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#inside</IRI>
+        <Literal>inside</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalAfter</IRI>
+        <Literal>intervalAfter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalBefore</IRI>
+        <Literal>intervalBefore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalContains</IRI>
+        <Literal>intervalContains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalDisjoint</IRI>
+        <Literal>intervalDisjoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalDuring</IRI>
+        <Literal>intervalDuring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalEquals</IRI>
+        <Literal>intervalEquals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalFinishedBy</IRI>
+        <Literal>intervalFinishedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalFinishes</IRI>
+        <Literal>intervalFinishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalIn</IRI>
+        <Literal>intervalIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalMeets</IRI>
+        <Literal>intervalMeets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalMetBy</IRI>
+        <Literal>intervalMetBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalOverlappedBy</IRI>
+        <Literal>intervalOverlappedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalOverlaps</IRI>
+        <Literal>intervalOverlaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalStartedBy</IRI>
+        <Literal>intervalStartedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2006/time#intervalStarts</IRI>
+        <Literal>intervalStarts</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

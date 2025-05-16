@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://automotive.eurecom.fr/vsso#" uri="file:/C:/Users/smasmoudi/OneDrive%20-%20Expleo%20France/Documents/DriveWise/vsso-member-submission/vsso-member-submission/vsso.ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1747230440233" name="http://spider.sigappfr.org/HSSNdoc/hssn.ttl" uri="Hybrid-SSN.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747230440233" name="http://spider.sigappfr.org/uCSNdoc/ucsn.ttl" uri="drivewise.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747230440233" name="http://www.w3.org/ns/sosa/" uri="sosa.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747230440233" name="http://www.w3.org/ns/ssn/" uri="ssn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747230440233" name="http://www.w3.org/ns/ssn/systems/" uri="ssn-system.owl"/>
+    </group>
+</catalog>
